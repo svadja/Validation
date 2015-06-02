@@ -20,6 +20,9 @@
 		<label>integer type</label>
 		<form:input path="int_type" />
 		
+		<label>Email</label>
+		<form:input path="email"/>
+		
 		<button type="submit">Send</button>
 	</form:form>
 

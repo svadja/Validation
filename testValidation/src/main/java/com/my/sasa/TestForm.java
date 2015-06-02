@@ -4,6 +4,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
 public class TestForm {
@@ -17,7 +18,19 @@ public class TestForm {
 	@NotNull
 	int int_type;
 	
+	@NotBlank
+	@Email
+	String email;
+	
+	
 
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public String getStr() {
 		return str;
 	}
@@ -39,10 +52,7 @@ public class TestForm {
 	@Override
 	public String toString() {
 		return "TestForm [str=" + str + ", int_class=" + int_class
-				+ ", int_type=" + int_type + "]";
+				+ ", int_type=" + int_type + ", email=" + email + "]";
 	}
-	
-	
-	
-	
+
 }
