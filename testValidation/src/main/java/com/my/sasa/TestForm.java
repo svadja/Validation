@@ -24,6 +24,20 @@ public class TestForm {
 	
 	
 
+	public TestForm() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public TestForm(String email) {
+		super();
+		this.email = email;
+	}
+
+
+
 	public String getEmail() {
 		return email;
 	}
